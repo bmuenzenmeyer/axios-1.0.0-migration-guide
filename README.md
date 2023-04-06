@@ -27,7 +27,7 @@ If you were using axios@0.x with ESM/Vite, such as in Vue3, your import syntax m
 + import axios from 'axios';
 ```
 
-## AxiosRequestConfig for http interceptors
+## `AxiosRequestConfig` for http interceptors
 
 > from [@ghiscoding](https://github.com/ghiscoding) via https://github.com/axios/axios/discussions/4996#discussioncomment-5537237
 
