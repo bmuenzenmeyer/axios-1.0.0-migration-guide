@@ -22,7 +22,7 @@ Documenting the potential breaking changes between [0.27.2...1.0.0](https://gith
 
 If you were using axios@0.x with ESM/Vite, such as in Vue3, your import syntax may have changed:
 
-```
+```diff
 - import { axios } from '@bundled-es-modules/axios';
 + import axios from 'axios';
 ```
@@ -33,7 +33,7 @@ If you were using axios@0.x with ESM/Vite, such as in Vue3, your import syntax m
 
 > the only other issue we had was with the AxiosRequestConfig interface that we use in our http interceptors and for that we simply had to switch to the InternalAxiosRequestConfig interface
 
-```
+```diff
 - import { axios, AxiosRequestConfig, AxiosResponse } from '@bundled-es-modules/axios';
 + import axios, { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 
