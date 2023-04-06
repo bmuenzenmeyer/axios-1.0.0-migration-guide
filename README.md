@@ -16,6 +16,8 @@ crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/re
 
 Documenting the potential breaking changes between [0.27.2...1.0.0](https://github.com/axios/axios/compare/v0.27.2...v1.0.0)
 
+> not all have solutions, but are here for completeness
+
 ## import from @bundled-es-modules
 
 > from [@ghiscoding](https://github.com/ghiscoding) via https://github.com/axios/axios/discussions/4996#discussioncomment-5537237
@@ -54,7 +56,27 @@ async function onRequestResponseRejected(reason: AxiosError<string>) {
 
 https://github.com/axios/axios/issues/5630
 
-
 ## `axios.create` is not a function
 
 https://github.com/axios/axios/issues/5613
+
+## headers are not availabile in `beforeRedirect`
+
+https://github.com/axios/axios/issues/5365
+
+## axios attempts to resolve IPv6 addresses as hostnames
+
+https://github.com/axios/axios/issues/5333
+
+## `settle` helper not exported, or anything from `lib/helpers`
+
+> internals that may not be exposed anymore
+
+https://github.com/axios/axios/issues/5254
+https://github.com/axios/axios/issues/5072
+
+## `error.config` on `AxiosError` `ERR_INVALID_CHAR`
+
+https://github.com/axios/axios/issues/5254
+
+
