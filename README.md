@@ -7,6 +7,7 @@ crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/re
 ## axios links
 
 - [axios docs](https://axios-http.com/docs/intro)
+- [official migration guide](https://github.com/axios/axios/blob/v1.x/MIGRATION_GUIDE.md)
 - [axios Community Discussion](https://github.com/axios/axios/discussions/4996)
 - [Upgrade Guide needs to be updated with 0.x.x -> 1.0.0](https://github.com/axios/axios/issues/5014)
 
