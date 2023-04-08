@@ -1,0 +1,22 @@
+{
+  "name": "axios-1.0.0-migration-guide",
+  "version": "1.0.0",
+  "description": "crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/releases/tag/v1.0.0)",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "node ./examples/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide/issues"
+  },
+  "homepage": "https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide#readme"
+}
