@@ -2,10 +2,6 @@
   "name": "axios-1.0.0-migration-guide",
   "version": "1.0.0",
   "description": "crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/releases/tag/v1.0.0)",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
     "start": "node ./examples/server.js"
   },

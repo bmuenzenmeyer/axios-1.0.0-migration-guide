@@ -83,7 +83,8 @@ server = http.createServer(function (req, res) {
   var url = req.url
 
   // Process axios itself
-  var version = "0.27.2"
+  // var version = "0.27.2"
+  var version = "1.3.5"
 
   if (/axios\.min\.js$/.test(url)) {
     pipeFileToResponse(
