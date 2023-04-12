@@ -9,3 +9,15 @@ To add a new migration note, do your best to:
 - link to a PR if you have public code.
 
 If you don't have time to do all this, an issue will suffice, we'll do our best to support one another
+
+## Examples
+
+I've copied the [axios 0.X examples from the official repo](https://github.com/axios/axios/tree/v0.x/examples). The thought process is that these might capture common use cases and be useful to check functionality across the `1.X` divide. I've also added the files for both 0.27.2 and 1.3.5 to "`dist/`".
+
+Run `npm start` to load `examples/server.js`. That file currently has a quick and dirty `version` variable that can be switched:
+
+```
+  // Process axios itself
+  // var version = "0.27.2"
+  var version = "1.3.5"
+```
