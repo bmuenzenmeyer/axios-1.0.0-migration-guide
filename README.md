@@ -69,6 +69,19 @@ Look out for the shape of `request.headers` to have changed.
     }
 ```
 
+## `paramsSerializer` shape changes
+
+> from [@vovkvlad](https://github.com/vovkvlad) via https://github.com/axios/axios/discussions/4996#discussioncomment-6499323
+
+Look out for the shape of the `paramsSerializer` to have changed. Although the new README has the new structure, the official docs site is still referring to the old structure.
+
+```
+axios.get(url, {
+- paramsSerializer: (params) =>
+-           doSmth(params),
++ paramsSerializer: { serialize: (params) => doSmth }
+```
+
 ## Serialization of get `params`
 
 https://github.com/axios/axios/issues/5630
@@ -95,3 +108,7 @@ https://github.com/axios/axios/issues/5072
 ## `error.config` on `AxiosError` `ERR_INVALID_CHAR`
 
 https://github.com/axios/axios/issues/5254
+
+## Request config changes
+
+https://github.com/axios/axios-docs/pull/126/files
