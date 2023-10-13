@@ -82,6 +82,37 @@ axios.get(url, {
 + paramsSerializer: { serialize: (params) => doSmth }
 ```
 
+## Multipart form data is no longer automatically set
+
+> from [@leonbloy](https://github.com/leonbloy) via https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide/issues/5
+
+This got me after migrating from 0.27.2 to 1.5
+
+https://github.com/axios/axios/issues/5556
+
+I'm not sure when it changed
+
+In Axios ,  a request which includes a formData payload as in 
+
+```js
+const formData = new FormData()
+formData.append("sample", "sample")
+
+axiosInstance({
+   url: "inventories",
+   method: "post",
+   data: formData,
+ },
+
+```
+
+will automatically include the  header 'Content-Type': 'multipart/form-data'.
+
+Previously, that happened even if a  'Content-Type': 'application/json' was set.
+
+Now (after 1.x ?), in that case, Axios will serialize FormData/HTMLForm object to JSON.
+
+
 ## Serialization of get `params`
 
 https://github.com/axios/axios/issues/5630
