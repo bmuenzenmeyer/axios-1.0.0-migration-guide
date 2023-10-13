@@ -75,7 +75,7 @@ Look out for the shape of `request.headers` to have changed.
 
 Look out for the shape of the `paramsSerializer` to have changed. Although the new README has the new structure, the official docs site is still referring to the old structure.
 
-```
+```diff
 axios.get(url, {
 - paramsSerializer: (params) =>
 -           doSmth(params),
