@@ -11,6 +11,7 @@ crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/re
 - [axios Community Discussion](https://github.com/axios/axios/discussions/4996)
 - [Upgrade Guide needs to be updated with 0.x.x -> 1.0.0](https://github.com/axios/axios/issues/5014)
 - [Is axios@1 stable?](https://github.com/axios/axios/discussions/5645)
+- [CVE-2023-45857 axios@0.x vulnerability](https://github.com/axios/axios/issues/6090) and [patch](https://github.com/axios/axios/pull/6091)
 
 ---
 
