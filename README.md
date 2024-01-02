@@ -83,6 +83,12 @@ axios.get(url, {
 + paramsSerializer: { serialize: (params) => doSmth }
 ```
 
+> [!NOTE]
+> As of [axios@v1.3.5](https://github.com/axios/axios/releases/tag/v1.3.5), the `paramSerializer` option can again be a function.
+> Thanks to [@drichar](https://github.com/drichar) for [reporting](https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide/issues/6)
+
+
+
 ## Multipart form data is no longer automatically set
 
 > from [@leonbloy](https://github.com/leonbloy) via https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide/issues/5
