@@ -119,6 +119,35 @@ Previously, that happened even if a  'Content-Type': 'application/json' was set.
 
 Now (after 1.x ?), in that case, Axios will serialize FormData/HTMLForm object to JSON.
 
+## Optional Headers error when empty string
+
+> from [@mmarrius](https://github.com/mmarrius) via https://github.com/bmuenzenmeyer/axios-1.0.0-migration-guide/issues/7
+
+If your config looked something like this in v 0.x
+
+```js
+  const config = {
+      baseURL: baseUrl,
+      method: 'GET',
+      headers: accessToken && { Authorization: "Bearer " + accessToken }
+  }
+```
+
+know that if `accessToken` is `false` it will end up with a `header name must be a non-empty string` error in v 1.x.
+
+You can remove the extra check of `accessToken &&` in which case the header's value will become `Bearer false`. Having the header present however, means that the request is not public anymore so the better solution would be to not send the header at all, in case you don't have the token.
+
+```js
+const config = {
+    baseURL: baseUrl,
+    method: 'GET',
+}
+
+if (accessToken) {
+    config.headers = { Authorization: "Bearer " + accessToken }
+}
+```
+
 
 ## Serialization of get `params`
 
