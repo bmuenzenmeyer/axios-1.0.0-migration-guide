@@ -174,7 +174,7 @@ https://github.com/axios/axios/issues/5072
 
 ## `error.config` on `AxiosError` `ERR_INVALID_CHAR`
 
-https://github.com/axios/axios/issues/5254
+https://github.com/axios/axios/issues/5089 - thanks for reporting [@Duncan-Brain](https://github.com/Duncan-Brain)
 
 ## Request config changes
 
