@@ -2,6 +2,7 @@
 
 crowd-sourced migration guide for [axios1.0.0](https://github.com/axios/axios/releases/tag/v1.0.0)
 
+- [READ THE OFFICIAL MIGRATION GUIDE](https://github.com/axios/axios/blob/v1.x/MIGRATION_GUIDE.md) - [now released](https://github.com/axios/axios/pull/7218)
 - [CONTRIBUTING GUIDE](./CONTRIBUTING.md)
 
 ## axios links
